@@ -8,6 +8,7 @@
 
 import Firebase
 import UIKit
+import UI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         setupFirebase()
         setupRemoteConfig()
+        let sampleUIFile = UISampleFile()
+        
+        sampleUIFile.sumAndPrint()
         return true
     }
 

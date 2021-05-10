@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M67-kf-cZl" userLabel="headerView" customClass="HeaderView" customModule="BitPrice" customModuleProvider="target">
-                                <rect key="frame" x="15" y="35" width="345" height="28"/>
+                                <rect key="frame" x="15" y="15" width="345" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr6-RV-HNH" userLabel="titleLabel">
                                         <rect key="frame" x="115.5" y="0.0" width="114" height="28"/>
@@ -38,7 +36,7 @@
                                         <color key="textColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOd-U2-kcQ" userLabel="refreshButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOd-U2-kcQ" userLabel="refreshButton">
                                         <rect key="frame" x="317" y="0.0" width="28" height="28"/>
                                         <accessibility key="accessibilityConfiguration" identifier="refreshButton"/>
                                         <constraints>
@@ -65,7 +63,7 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAa-wT-mei" userLabel="bodyView" customClass="BodyView" customModule="BitPrice" customModuleProvider="target">
-                                <rect key="frame" x="15" y="78" width="345" height="514"/>
+                                <rect key="frame" x="15" y="58" width="345" height="534"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUx-WC-jGd" userLabel="priceView" customClass="BodyPriceView" customModule="BitPrice" customModuleProvider="target">
                                         <rect key="frame" x="15" y="15" width="315" height="74.5"/>
@@ -107,10 +105,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="np2-Gi-q6k" userLabel="historyView" customClass="BodyHistoryView" customModule="BitPrice" customModuleProvider="target">
-                                        <rect key="frame" x="15" y="120.5" width="315" height="378.5"/>
+                                        <rect key="frame" x="15" y="120.5" width="315" height="398.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJb-mp-QRp" userLabel="Left View">
-                                                <rect key="frame" x="0.0" y="0.0" width="102.5" height="47"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="102" height="47"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9b-dT-Hoy" userLabel="titleLabel">
                                                         <rect key="frame" x="0.0" y="0.0" width="102" height="23.5"/>
@@ -119,7 +117,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zET-W6-IDV" userLabel="referenceLabel">
-                                                        <rect key="frame" x="0.0" y="27.5" width="102.5" height="19.5"/>
+                                                        <rect key="frame" x="0.0" y="27.5" width="102" height="19.5"/>
                                                         <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="15"/>
                                                         <color key="textColor" red="0.29803921570000003" green="0.25882352939999997" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -135,8 +133,8 @@
                                                     <constraint firstItem="I9b-dT-Hoy" firstAttribute="top" secondItem="XJb-mp-QRp" secondAttribute="top" id="zSs-Fu-GU5"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiZ-lZ-dc0" userLabel="chartView" customClass="ChartView" customModule="BitPrice" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="62" width="315" height="317"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiZ-lZ-dc0" userLabel="chartView" customClass="ChartView" customModule="UI">
+                                                <rect key="frame" x="0.0" y="62" width="315" height="336.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkk-BG-a5e" userLabel="Right View">
@@ -150,7 +148,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iv-Ga-RKZ" userLabel="percentLabel">
-                                                        <rect key="frame" x="25" y="4.5" width="11" height="17"/>
+                                                        <rect key="frame" x="25" y="4" width="11" height="17"/>
                                                         <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -178,7 +176,7 @@
                                             <constraint firstItem="EiZ-lZ-dc0" firstAttribute="top" secondItem="Vkk-BG-a5e" secondAttribute="bottom" constant="11" id="zrl-BW-GOI"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="chartView" destination="EiZ-lZ-dc0" id="39L-tl-5Fb"/>
+                                            <outlet property="chartView" destination="EiZ-lZ-dc0" id="vHC-VL-fMC"/>
                                             <outlet property="indicatorImageView" destination="Zg2-qD-Ulo" id="OJv-Te-sQH"/>
                                             <outlet property="percentLabel" destination="2iv-Ga-RKZ" id="lZI-SC-PFA"/>
                                             <outlet property="referenceLabel" destination="zET-W6-IDV" id="bhe-G6-BCt"/>
@@ -307,6 +305,7 @@
                                 </connections>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.0" green="0.7843137255" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -321,7 +320,6 @@
                             <constraint firstItem="M67-kf-cZl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="ndS-cs-2qm"/>
                             <constraint firstItem="bhO-bJ-VfL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="vG6-p5-N7b"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="bodyView" destination="rAa-wT-mei" id="rxE-Ti-SNg"/>
@@ -334,8 +332,8 @@
             <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.29803921570000003" green="0.25882352939999997" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="ic_refresh" width="28" height="28"/>
     </resources>
-    <color key="tintColor" red="0.29803921570000003" green="0.25882352939999997" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

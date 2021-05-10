@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIView {
+public extension UIView {
 
     func heartAnimation() {
         let animation = CABasicAnimation(keyPath: "transform.scale")

@@ -6,6 +6,7 @@
 //  Copyright © 2018 Bruno Tortato Furtado. All rights reserved.
 //
 
+import UI
 import UIKit
 
 class FooterView: UIView {
