@@ -22,7 +22,6 @@
 		8C7C443E2649718400D05C50 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C443D2649718400D05C50 /* UITests.swift */; };
 		8C7C44402649718400D05C50 /* UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7C44322649718300D05C50 /* UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CA97F6E264C207300ECAAD8 /* ChartDataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA97F6D264C207300ECAAD8 /* ChartDataEntry.swift */; };
-		8CA97FD1264C255500ECAAD8 /* UISampleFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA97FD0264C255500ECAAD8 /* UISampleFile.swift */; };
 		8CC4D467264979EE009DA3F2 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4D45F264979EE009DA3F2 /* ChartView.swift */; };
 		8CC4D468264979EE009DA3F2 /* BannerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4D461264979EE009DA3F2 /* BannerColors.swift */; };
 		8CC4D469264979EE009DA3F2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4D463264979EE009DA3F2 /* CardView.swift */; };
@@ -60,7 +59,6 @@
 		8C7C443D2649718400D05C50 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		8C7C443F2649718400D05C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CA97F6D264C207300ECAAD8 /* ChartDataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataEntry.swift; sourceTree = "<group>"; };
-		8CA97FD0264C255500ECAAD8 /* UISampleFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISampleFile.swift; sourceTree = "<group>"; };
 		8CC4D45F264979EE009DA3F2 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		8CC4D461264979EE009DA3F2 /* BannerColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerColors.swift; sourceTree = "<group>"; };
 		8CC4D463264979EE009DA3F2 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 				8CC4D465264979EE009DA3F2 /* UIButton */,
 				8CC4D462264979EE009DA3F2 /* UIView */,
 				8C7C44322649718300D05C50 /* UI.h */,
-				8CA97FD0264C255500ECAAD8 /* UISampleFile.swift */,
 				8C7C44332649718300D05C50 /* Info.plist */,
 			);
 			path = UI;
@@ -365,7 +362,6 @@
 				8C4F059226498C3C00AB1772 /* Date+Diff.swift in Sources */,
 				8C4F059326498C3C00AB1772 /* Date+Components.swift in Sources */,
 				8CA97F6E264C207300ECAAD8 /* ChartDataEntry.swift in Sources */,
-				8CA97FD1264C255500ECAAD8 /* UISampleFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

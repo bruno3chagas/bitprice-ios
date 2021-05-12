@@ -19,9 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         setupFirebase()
         setupRemoteConfig()
-        let sampleUIFile = UISampleFile()
-        
-        sampleUIFile.sumAndPrint()
         return true
     }
 
