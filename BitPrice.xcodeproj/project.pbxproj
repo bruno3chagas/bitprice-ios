@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		27F93373519ECC0BE0A2F24B /* Pods_BitPrice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B34BFFBF5AF27B7753AEF30 /* Pods_BitPrice.framework */; };
 		73E1BE82AA673BDB1624510F /* Pods_BitPriceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664C18CFF9DED32C6060BE52 /* Pods_BitPriceUITests.framework */; };
-		8C4F059F26498C7600AB1772 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4F059E26498C7600AB1772 /* UI.framework */; };
-		8C4F05A026498C7600AB1772 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4F059E26498C7600AB1772 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8C4F05C52649973C00AB1772 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05BF2649973C00AB1772 /* FooterView.swift */; };
 		8C4F05C62649973C00AB1772 /* BodyPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C12649973C00AB1772 /* BodyPriceView.swift */; };
 		8C4F05C72649973C00AB1772 /* BodyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C22649973C00AB1772 /* BodyHistoryView.swift */; };
 		8C4F05C82649973C00AB1772 /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C32649973C00AB1772 /* BodyView.swift */; };
 		8C4F05C92649973C00AB1772 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C42649973C00AB1772 /* HeaderView.swift */; };
+		8CA97FAB264C229800ECAAD8 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA97FAA264C229800ECAAD8 /* UI.framework */; };
+		8CA97FAC264C229800ECAAD8 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA97FAA264C229800ECAAD8 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90D71FFA61EE60BD4F6F6A84 /* Pods_SnapshotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CC8C1CC9AE67D258C013D8 /* Pods_SnapshotUITests.framework */; };
 		B5CF2D788D7C5B77E19FD99A /* Pods_BitPriceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07813F8BD707C695FDBBC646 /* Pods_BitPriceTests.framework */; };
 		F83587752027AD4D00D3D375 /* SnapshotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83587742027AD4D00D3D375 /* SnapshotUITests.swift */; };
@@ -86,13 +86,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8C4E34C5264981CD00BA8937 /* Embed Frameworks */ = {
+		8CA97FAD264C229800ECAAD8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8C4F05A026498C7600AB1772 /* UI.framework in Embed Frameworks */,
+				8CA97FAC264C229800ECAAD8 /* UI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +115,7 @@
 		8C4F05C32649973C00AB1772 /* BodyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyView.swift; sourceTree = "<group>"; };
 		8C4F05C42649973C00AB1772 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		8C7C444D2649723000D05C50 /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CA97FAA264C229800ECAAD8 /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B34BFFBF5AF27B7753AEF30 /* Pods_BitPrice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitPrice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B861BE33033E914987B727AB /* Pods-SnapshotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotUITests/Pods-SnapshotUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E040B7A9DD2ED0787D6FD566 /* Pods-BitPrice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPrice.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitPrice/Pods-BitPrice.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,7 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C4F059F26498C7600AB1772 /* UI.framework in Frameworks */,
+				8CA97FAB264C229800ECAAD8 /* UI.framework in Frameworks */,
 				27F93373519ECC0BE0A2F24B /* Pods_BitPrice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +214,7 @@
 		5E414E20828CE915BF9738F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CA97FAA264C229800ECAAD8 /* UI.framework */,
 				8C4F059E26498C7600AB1772 /* UI.framework */,
 				8C7C444D2649723000D05C50 /* UI.framework */,
 				9B34BFFBF5AF27B7753AEF30 /* Pods_BitPrice.framework */,
@@ -512,7 +514,7 @@
 				788B8434B80F97993872248B /* [CP] Embed Pods Frameworks */,
 				F8635772201AAE1000FB886B /* Run Crashlytics Script */,
 				F881EA12202630B300F5E096 /* Run SwiftLint Script */,
-				8C4E34C5264981CD00BA8937 /* Embed Frameworks */,
+				8CA97FAD264C229800ECAAD8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -41,7 +41,8 @@ public class ChartView: LineChartView {
 
     private func line(values: [ChartDataEntry]) -> LineChartDataSet {
         let color = UIColor.App.purple
-        let line = LineChartDataSet(entries: values, label: nil)
+        let chartsDataEntryValues = values.map { Charts.ChartDataEntry(x: $0.x, y: $0.y) }
+        let line = LineChartDataSet(entries: chartsDataEntryValues, label: nil)
 
         line.setColor(color)
         line.setCircleColor(color)

@@ -7,7 +7,6 @@
 //
 
 import UI
-import Charts
 import UIKit
 
 class BodyHistoryView: UIView {

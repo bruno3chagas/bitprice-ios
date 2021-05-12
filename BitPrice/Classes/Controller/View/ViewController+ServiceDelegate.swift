@@ -7,7 +7,6 @@
 //
 
 import UI
-import Charts
 import NotificationBannerSwift
 import UIKit
 
