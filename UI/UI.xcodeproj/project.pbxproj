@@ -21,8 +21,8 @@
 		8C7C44392649718400D05C50 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7C442F2649718300D05C50 /* UI.framework */; };
 		8C7C443E2649718400D05C50 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C443D2649718400D05C50 /* UITests.swift */; };
 		8C7C44402649718400D05C50 /* UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7C44322649718300D05C50 /* UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C7C4455264974F600D05C50 /* UISampleFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C4454264974F600D05C50 /* UISampleFile.swift */; };
 		8CA97F6E264C207300ECAAD8 /* ChartDataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA97F6D264C207300ECAAD8 /* ChartDataEntry.swift */; };
+		8CA97FD1264C255500ECAAD8 /* UISampleFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA97FD0264C255500ECAAD8 /* UISampleFile.swift */; };
 		8CC4D467264979EE009DA3F2 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4D45F264979EE009DA3F2 /* ChartView.swift */; };
 		8CC4D468264979EE009DA3F2 /* BannerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4D461264979EE009DA3F2 /* BannerColors.swift */; };
 		8CC4D469264979EE009DA3F2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4D463264979EE009DA3F2 /* CardView.swift */; };
@@ -59,8 +59,8 @@
 		8C7C44382649718400D05C50 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7C443D2649718400D05C50 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		8C7C443F2649718400D05C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C7C4454264974F600D05C50 /* UISampleFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISampleFile.swift; sourceTree = "<group>"; };
 		8CA97F6D264C207300ECAAD8 /* ChartDataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataEntry.swift; sourceTree = "<group>"; };
+		8CA97FD0264C255500ECAAD8 /* UISampleFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISampleFile.swift; sourceTree = "<group>"; };
 		8CC4D45F264979EE009DA3F2 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		8CC4D461264979EE009DA3F2 /* BannerColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerColors.swift; sourceTree = "<group>"; };
 		8CC4D463264979EE009DA3F2 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -138,8 +138,8 @@
 				8CC4D465264979EE009DA3F2 /* UIButton */,
 				8CC4D462264979EE009DA3F2 /* UIView */,
 				8C7C44322649718300D05C50 /* UI.h */,
+				8CA97FD0264C255500ECAAD8 /* UISampleFile.swift */,
 				8C7C44332649718300D05C50 /* Info.plist */,
-				8C7C4454264974F600D05C50 /* UISampleFile.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -348,7 +348,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C7C4455264974F600D05C50 /* UISampleFile.swift in Sources */,
 				8C4F059626498C3C00AB1772 /* UIView+Shadow.swift in Sources */,
 				8CC4D46B264979EE009DA3F2 /* Button.swift in Sources */,
 				8C4F059126498C3C00AB1772 /* StatusBarNotificationBanner+App.swift in Sources */,
@@ -366,6 +365,7 @@
 				8C4F059226498C3C00AB1772 /* Date+Diff.swift in Sources */,
 				8C4F059326498C3C00AB1772 /* Date+Components.swift in Sources */,
 				8CA97F6E264C207300ECAAD8 /* ChartDataEntry.swift in Sources */,
+				8CA97FD1264C255500ECAAD8 /* UISampleFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
