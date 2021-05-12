@@ -1,5 +1,5 @@
 //
-//  MarketPriceApiRouter.swift
+//  TickerApiRouter.swift
 //  BitPrice
 //
 //  Created by Bruno Tortato Furtado on 27/01/18.
@@ -9,11 +9,11 @@
 import Alamofire
 import Foundation
 
-enum MarketPriceApiRouter: URLRequestConvertible {
+enum TickerApiRouter: URLRequestConvertible {
 
     // MARK: - Router
 
-    case get([String: String])
+    case get
 
     // MARK: - URLRequestConvertible
 
@@ -22,8 +22,7 @@ enum MarketPriceApiRouter: URLRequestConvertible {
         urlRequest.httpMethod = method.rawValue
 
         switch self {
-        case .get(let params):
-            urlRequest = try URLEncoding.default.encode(urlRequest, with: params)
+        case .get: urlRequest = try URLEncoding.default.encode(urlRequest, with: nil)
         }
 
         return urlRequest
@@ -39,7 +38,7 @@ enum MarketPriceApiRouter: URLRequestConvertible {
 
     private var path: String {
         switch self {
-        case .get: return "/charts/market-price"
+        case .get: return "/ticker"
         }
     }
 

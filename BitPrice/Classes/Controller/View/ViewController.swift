@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         }
     }
 
-    func callMarketPriceService(reference: ReferenceType) {
+    func callMarketPriceService(reference: ReferenceTypeAPI) {
         marketPriceService.get(reference: reference)
 
         if let historyView = bodyView.historyView {
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         marketPriceService.delegate = self
     }
 
-    private func setupViews(reference: ReferenceType) {
+    private func setupViews(reference: ReferenceTypeAPI) {
         headerView.delegate = self
         footerView.delegate = self
         footerView.setReference(reference)

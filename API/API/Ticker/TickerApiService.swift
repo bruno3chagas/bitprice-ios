@@ -9,14 +9,18 @@
 import Alamofire
 import Foundation
 
-class TickerApiService: ApiService {
+public class TickerApiService: ApiService {
 
     // MARK: - Public
 
-    func get(success: @escaping (Data) -> Void,
-             failure: @escaping (ServiceFailureType) -> Void) {
+    public override init() {
+        super.init()
+    }
+    
+    public func get(success: @escaping (Data) -> Void,
+                    failure: @escaping (ServiceFailureType) -> Void) {
 
-        _ = self.sessionManager.request(TickerApiRouter.get())
+        _ = self.sessionManager.request(TickerApiRouter.get)
             .validate(statusCode: [200])
             .responseJSON { response in
                 guard let data = response.data else {

@@ -9,11 +9,13 @@
 import CoreData
 import Foundation
 
-class RequestDbService {
+public class RequestDbService {
 
     // MARK: - Public
 
-    func insert(reference: ReferenceType?, data: Data, date: Date) {
+    public init() {}
+
+    public func insert(reference: ReferenceType?, data: Data, date: Date) {
         delete(reference: reference)
 
         let stack = CoreDataStack.shared
@@ -28,7 +30,7 @@ class RequestDbService {
         }
     }
 
-    func fetch(reference: ReferenceType?) -> RequestEntity? {
+    public func fetch(reference: ReferenceType?) -> RequestEntity? {
         let context = CoreDataStack.shared.context
         var request: RequestEntity?
 
@@ -50,7 +52,7 @@ class RequestDbService {
         return request
     }
 
-    func fetch() -> [RequestEntity]? {
+    public func fetch() -> [RequestEntity]? {
         let context = CoreDataStack.shared.context
         let fetchRequest: NSFetchRequest<RequestEntity> = RequestEntity.fetchRequest()
         var requests: [RequestEntity]?
@@ -64,7 +66,7 @@ class RequestDbService {
         return requests
     }
 
-    func delete(reference: ReferenceType?) {
+    public func delete(reference: ReferenceType?) {
         let stack = CoreDataStack.shared
         let context = stack.context
         let request = fetch(reference: reference)
@@ -75,7 +77,7 @@ class RequestDbService {
         }
     }
 
-    func delete() {
+    public func delete() {
         let stack = CoreDataStack.shared
         let context = stack.context
         let requests = fetch()

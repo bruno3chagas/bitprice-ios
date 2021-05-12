@@ -17,19 +17,19 @@ extension UserDefaults {
 
     // MARK: - Reference
 
-    func reference() -> ReferenceType {
+    func reference() -> ReferenceTypeAPI {
         let storedValue = value(forKey: Key.referenceType)
-        var type: ReferenceType?
+        var type: ReferenceTypeAPI?
 
         if let storedValue = storedValue {
-            let value = storedValue as? String ?? ReferenceType.week.rawValue
-            type = ReferenceType(rawValue: value)
+            let value = storedValue as? String ?? ReferenceTypeAPI.week.rawValue
+            type = ReferenceTypeAPI(rawValue: value)
         }
 
-        return type ?? ReferenceType.week
+        return type ?? ReferenceTypeAPI.week
     }
 
-    func setReference(_ type: ReferenceType) {
+    func setReference(_ type: ReferenceTypeAPI) {
         set(type.rawValue, forKey: Key.referenceType)
     }
 

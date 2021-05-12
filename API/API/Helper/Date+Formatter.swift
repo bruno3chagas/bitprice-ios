@@ -19,7 +19,7 @@ extension Date {
         return formatter.date(from: string)!
     }
 
-    func toString(dateFormat: String) -> String {
+    public func toString(dateFormat: String) -> String {
         let formatter = DateFormatter()
 
         formatter.locale = Locale.current

@@ -21,7 +21,7 @@ extension ViewController: TickerServiceDelegate {
         }
     }
 
-    func tickerGetDidComplete(failure: ServiceFailureType) {
+    func tickerGetDidComplete(failure: ServiceFailureTypeAPI) {
         bodyView.priceView.setPrice(0)
         bodyView.priceView.spinnerView.hide()
 
@@ -45,9 +45,9 @@ extension ViewController: MarketPriceServiceDelegate {
         var values = [ChartDataEntry]()
 
         for value in marketPrice.values {
-            let x = Double(value.xAxis)
-            let y = Double(value.yAxis)
-            values.append(ChartDataEntry(x: x, y: y))
+            let xAxis = Double(value.xAxis)
+            let yAxis = Double(value.yAxis)
+            values.append(ChartDataEntry(x: xAxis, y: yAxis))
         }
 
         bodyView.historyView.setLoaded(true)
@@ -56,7 +56,7 @@ extension ViewController: MarketPriceServiceDelegate {
         bodyView.historyView.spinnerView.hide()
     }
 
-    func marketPriceGetDidComplete(failure: ServiceFailureType) {
+    func marketPriceGetDidComplete(failure: ServiceFailureTypeAPI) {
         bodyView.historyView.setLoaded(true)
         bodyView.historyView.spinnerView.hide()
     }

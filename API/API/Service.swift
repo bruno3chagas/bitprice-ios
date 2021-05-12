@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Service<T: Decodable> {
+open class Service<T: Decodable> {
 
     // MARK: - Variables
 
@@ -16,7 +16,9 @@ class Service<T: Decodable> {
 
     // MARK: - Public
 
-    func jsonDecode(data: Data) -> T? {
+    public init() {}
+
+    public func jsonDecode(data: Data) -> T? {
         do {
             return try JSONDecoder().decode(T.self, from: data)
         } catch {
@@ -24,7 +26,7 @@ class Service<T: Decodable> {
         }
     }
 
-    func dbFetch(reference: ReferenceType, cachedDays days: Int? = nil) -> T? {
+    public func dbFetch(reference: ReferenceType, cachedDays days: Int? = nil) -> T? {
         guard let request = dbService.fetch(reference: reference) else { return nil }
 
         guard let days = days else {
@@ -38,13 +40,13 @@ class Service<T: Decodable> {
         return nil
     }
 
-    func dbInsert(reference: ReferenceType? = nil, data: Data, date: Date = Date()) {
+    public func dbInsert(reference: ReferenceType? = nil, data: Data, date: Date = Date()) {
         dbService.insert(reference: reference, data: data, date: date)
     }
 
 }
 
-enum ServiceFailureType {
+public enum ServiceFailureType {
     case connection
     case server
 }
