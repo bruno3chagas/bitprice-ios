@@ -1,11 +1,9 @@
 platform :ios, '9.0'
 
+workspace 'BitPrice.xcworkspace' 
+
 target 'BitPrice' do
     use_frameworks!
-    
-    # Alamofire (HTTP networking)
-    # https://github.com/Alamofire/Alamofire
-    pod 'Alamofire', '~> 4.6.0'
     
     # Charts (Beautiful charts for iOS/tvOS/OSX)
     # https://github.com/danielgindi/Charts
@@ -22,6 +20,10 @@ target 'BitPrice' do
     pod 'Firebase/Performance', '~> 4.8.2'
     pod 'Firebase/RemoteConfig', '~> 4.8.2'
     
+    # Alamofire (HTTP networking)
+    # https://github.com/Alamofire/Alamofire
+    pod 'Alamofire', '~> 4.6.0'
+
     # NotificationBanner (highly customizable in app notification banners)
     # https://github.com/Daltron/NotificationBanner
     pod 'NotificationBannerSwift', '~> 1.6.1'
@@ -38,6 +40,20 @@ target 'BitPrice' do
         inherit! :search_paths
     end
 
+end
+
+target 'API' do
+    use_frameworks!
+    project 'API/API.xcodeproj'
+    
+    # Alamofire (HTTP networking)
+    # https://github.com/Alamofire/Alamofire
+    pod 'Alamofire', '~> 4.6.0'
+
+    target 'APITests' do
+        inherit! :search_paths
+    end
+    
 end
 
 post_install do | installer |
