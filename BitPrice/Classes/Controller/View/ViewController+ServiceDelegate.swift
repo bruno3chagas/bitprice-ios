@@ -44,9 +44,9 @@ extension ViewController: MarketPriceServiceDelegate {
         var values = [ChartDataEntry]()
 
         for value in marketPrice.values {
-            let x = Double(value.xAxis)
-            let y = Double(value.yAxis)
-            values.append(ChartDataEntry(x: x, y: y))
+            let xAxis = Double(value.xAxis)
+            let yAxis = Double(value.yAxis)
+            values.append(ChartDataEntry(xAxis: xAxis, yAxis: yAxis))
         }
 
         bodyView.historyView.setLoaded(true)

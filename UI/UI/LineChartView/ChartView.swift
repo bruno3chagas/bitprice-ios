@@ -7,6 +7,7 @@
 //
 
 import Charts
+import Extensions
 import UIKit
 
 public class ChartView: LineChartView {
@@ -41,7 +42,7 @@ public class ChartView: LineChartView {
 
     private func line(values: [ChartDataEntry]) -> LineChartDataSet {
         let color = UIColor.App.purple
-        let chartsDataEntryValues = values.map { Charts.ChartDataEntry(x: $0.x, y: $0.y) }
+        let chartsDataEntryValues = values.map { Charts.ChartDataEntry(x: $0.xAxis, y: $0.yAxis) }
         let line = LineChartDataSet(entries: chartsDataEntryValues, label: nil)
 
         line.setColor(color)

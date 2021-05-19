@@ -8,11 +8,11 @@
 import Foundation
 
 public struct ChartDataEntry {
-    let x: Double
-    let y: Double
+    let xAxis: Double
+    let yAxis: Double
     
-    public init(x: Double, y: Double) {
-        self.x = x
-        self.y = y
+    public init(xAxis: Double, yAxis: Double) {
+        self.xAxis = xAxis
+        self.yAxis = yAxis
     }
 }
