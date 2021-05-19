@@ -6,7 +6,7 @@
 //  Copyright © 2018 Bruno Tortato Furtado. All rights reserved.
 //
 
-import Charts
+import UI
 import UIKit
 
 class ViewController: UIViewController {
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         }
     }
 
-    func callMarketPriceService(reference: ReferenceTypeAPI) {
+    func callMarketPriceService(reference: ReferenceAPIType) {
         marketPriceService.get(reference: reference)
 
         if let historyView = bodyView.historyView {
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         marketPriceService.delegate = self
     }
 
-    private func setupViews(reference: ReferenceTypeAPI) {
+    private func setupViews(reference: ReferenceAPIType) {
         headerView.delegate = self
         footerView.delegate = self
         footerView.setReference(reference)

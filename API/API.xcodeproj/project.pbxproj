@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38977D7B2655B759006EC291 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38977D7A2655B759006EC291 /* Extensions.framework */; };
+		38977D7C2655B759006EC291 /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38977D7A2655B759006EC291 /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		389F0158264B20FF000C2024 /* Bundle+InfoPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F0157264B20FF000C2024 /* Bundle+InfoPlist.swift */; };
 		389F015B264B2165000C2024 /* ReferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F015A264B2165000C2024 /* ReferenceType.swift */; };
 		389F0161264B228A000C2024 /* RequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F0160264B228A000C2024 /* RequestEntity.swift */; };
 		389F0167264B22A8000C2024 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F0166264B22A8000C2024 /* CoreDataStack.swift */; };
-		389F0170264B2396000C2024 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F016D264B2396000C2024 /* Date+Components.swift */; };
-		389F0171264B2396000C2024 /* Date+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F016E264B2396000C2024 /* Date+Diff.swift */; };
-		389F0172264B2396000C2024 /* Date+Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F016F264B2396000C2024 /* Date+Calc.swift */; };
-		389F0178264B23C8000C2024 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F0177264B23C8000C2024 /* Date+Formatter.swift */; };
 		389F017E264B245A000C2024 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F017D264B245A000C2024 /* NSObject+ClassName.swift */; };
 		389FFF192649A9FE000C2024 /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389FFF0F2649A9FD000C2024 /* API.framework */; };
 		389FFF1E2649A9FE000C2024 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389FFF1D2649A9FE000C2024 /* APITests.swift */; };
@@ -40,18 +38,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		38977D7D2655B759006EC291 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				38977D7C2655B759006EC291 /* Extensions.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1CEDE6DBE30BBC64425261B7 /* Pods_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A761A2F293ECF43B999A61B /* Pods-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.release.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.release.xcconfig"; sourceTree = "<group>"; };
 		32CD5A59CE4EE3F61E74F01B /* Pods_APITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38977D7A2655B759006EC291 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		389F0157264B20FF000C2024 /* Bundle+InfoPlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+InfoPlist.swift"; sourceTree = "<group>"; };
 		389F015A264B2165000C2024 /* ReferenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceType.swift; sourceTree = "<group>"; };
 		389F0160264B228A000C2024 /* RequestEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEntity.swift; sourceTree = "<group>"; };
 		389F0166264B22A8000C2024 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		389F016D264B2396000C2024 /* Date+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
-		389F016E264B2396000C2024 /* Date+Diff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Diff.swift"; sourceTree = "<group>"; };
-		389F016F264B2396000C2024 /* Date+Calc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Calc.swift"; sourceTree = "<group>"; };
-		389F0177264B23C8000C2024 /* Date+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
 		389F017D264B245A000C2024 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		389FFF0F2649A9FD000C2024 /* API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		389FFF122649A9FD000C2024 /* API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
@@ -78,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38977D7B2655B759006EC291 /* Extensions.framework in Frameworks */,
 				AB358EFAAD75E8CDDE25CA75 /* Pods_API.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,10 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				389F017D264B245A000C2024 /* NSObject+ClassName.swift */,
-				389F0177264B23C8000C2024 /* Date+Formatter.swift */,
-				389F016F264B2396000C2024 /* Date+Calc.swift */,
-				389F016D264B2396000C2024 /* Date+Components.swift */,
-				389F016E264B2396000C2024 /* Date+Diff.swift */,
 				389F0166264B22A8000C2024 /* CoreDataStack.swift */,
 				389F0157264B20FF000C2024 /* Bundle+InfoPlist.swift */,
 			);
@@ -191,6 +197,7 @@
 		389FFF592649AF42000C2024 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				38977D7A2655B759006EC291 /* Extensions.framework */,
 				389FFFEA2649C720000C2024 /* Alamofire.framework */,
 				389FFF5A2649AF42000C2024 /* Alamofire.framework */,
 				1CEDE6DBE30BBC64425261B7 /* Pods_API.framework */,
@@ -235,6 +242,7 @@
 				389FFF0C2649A9FD000C2024 /* Frameworks */,
 				389FFF0D2649A9FD000C2024 /* Resources */,
 				389F00452649C8A0000C2024 /* Run SwiftLint Script */,
+				38977D7D2655B759006EC291 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -391,18 +399,14 @@
 				389FFF422649AC0F000C2024 /* TickerApiService.swift in Sources */,
 				389F0161264B228A000C2024 /* RequestEntity.swift in Sources */,
 				389FFF432649AC0F000C2024 /* TickerApiRouter.swift in Sources */,
-				389F0172264B2396000C2024 /* Date+Calc.swift in Sources */,
-				389F0171264B2396000C2024 /* Date+Diff.swift in Sources */,
 				389FFF382649ABE3000C2024 /* ApiService.swift in Sources */,
 				389FFF452649AC0F000C2024 /* MarketPriceApiRouter.swift in Sources */,
 				389F0167264B22A8000C2024 /* CoreDataStack.swift in Sources */,
 				389FFF502649AD15000C2024 /* Service.swift in Sources */,
-				389F0178264B23C8000C2024 /* Date+Formatter.swift in Sources */,
 				389F0158264B20FF000C2024 /* Bundle+InfoPlist.swift in Sources */,
 				389FFF512649AD15000C2024 /* RequestDbService.swift in Sources */,
 				389F017E264B245A000C2024 /* NSObject+ClassName.swift in Sources */,
 				389F015B264B2165000C2024 /* ReferenceType.swift in Sources */,
-				389F0170264B2396000C2024 /* Date+Components.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

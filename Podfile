@@ -1,13 +1,14 @@
-platform :ios, '9.0'
+platform :ios, '11.0'
+use_frameworks!
+workspace 'BitPrice'
 
 workspace 'BitPrice.xcworkspace' 
 
 target 'BitPrice' do
-    use_frameworks!
     
     # Charts (Beautiful charts for iOS/tvOS/OSX)
     # https://github.com/danielgindi/Charts
-    pod 'Charts', '~> 3.0.5'
+    pod 'Charts', '~> 3.6.0'
     
     # Crashlytics (crash reporting solution)
     # https://fabric.io/kits/ios/crashlytics/install
@@ -26,7 +27,7 @@ target 'BitPrice' do
 
     # NotificationBanner (highly customizable in app notification banners)
     # https://github.com/Daltron/NotificationBanner
-    pod 'NotificationBannerSwift', '~> 1.6.1'
+    pod 'NotificationBannerSwift', '~> 3.0.3'
     
     target 'BitPriceTests' do
         inherit! :search_paths
@@ -53,7 +54,17 @@ target 'API' do
     target 'APITests' do
         inherit! :search_paths
     end
+end
     
+target 'UI' do
+    project 'UI/UI.xcodeproj'
+    # Charts (Beautiful charts for iOS/tvOS/OSX)
+    # https://github.com/danielgindi/Charts
+    pod 'Charts', '~> 3.6.0'
+    
+    # NotificationBanner (highly customizable in app notification banners)
+    # https://github.com/Daltron/NotificationBanner
+    pod 'NotificationBannerSwift', '~> 3.0.3'
 end
 
 post_install do | installer |

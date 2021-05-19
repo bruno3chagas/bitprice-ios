@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
 
     static func fromString(_ string: String, dateFormat: String) -> Date {
         let formatter = DateFormatter()
@@ -19,7 +19,7 @@ extension Date {
         return formatter.date(from: string)!
     }
 
-    public func toString(dateFormat: String) -> String {
+    func toString(dateFormat: String) -> String {
         let formatter = DateFormatter()
 
         formatter.locale = Locale.current

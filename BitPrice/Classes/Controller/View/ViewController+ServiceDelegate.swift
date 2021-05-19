@@ -6,8 +6,7 @@
 //  Copyright © 2018 Bruno Tortato Furtado. All rights reserved.
 //
 
-import Charts
-import NotificationBannerSwift
+import UI
 import UIKit
 
 extension ViewController: TickerServiceDelegate {
@@ -17,7 +16,7 @@ extension ViewController: TickerServiceDelegate {
         bodyView.priceView.spinnerView.hide()
 
         if fromCache {
-            StatusBarNotificationBanner.noConnection.show()
+            StatusBarNotificationBannerComponent.noConnection.show()
         }
     }
 
@@ -27,9 +26,9 @@ extension ViewController: TickerServiceDelegate {
 
         switch failure {
         case .server:
-            StatusBarNotificationBanner.serverFailure.show()
+            StatusBarNotificationBannerComponent.serverFailure.show()
         case .connection:
-            StatusBarNotificationBanner.noConnection.show()
+            StatusBarNotificationBannerComponent.noConnection.show()
         }
     }
 
@@ -47,7 +46,7 @@ extension ViewController: MarketPriceServiceDelegate {
         for value in marketPrice.values {
             let xAxis = Double(value.xAxis)
             let yAxis = Double(value.yAxis)
-            values.append(ChartDataEntry(x: xAxis, y: yAxis))
+            values.append(ChartDataEntry(xAxis: xAxis, yAxis: yAxis))
         }
 
         bodyView.historyView.setLoaded(true)

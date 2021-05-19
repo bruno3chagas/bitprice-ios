@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import Extensions
 import Foundation
 
 public class MarketPriceApiService: ApiService {

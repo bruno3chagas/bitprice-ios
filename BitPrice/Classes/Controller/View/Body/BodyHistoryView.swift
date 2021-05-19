@@ -6,7 +6,7 @@
 //  Copyright © 2018 Bruno Tortato Furtado. All rights reserved.
 //
 
-import Charts
+import UI
 import UIKit
 
 class BodyHistoryView: UIView {
@@ -62,7 +62,7 @@ class BodyHistoryView: UIView {
         setPercent(firstPrice: firstPrice, lastPrice: lastPrice, color: color)
     }
 
-    func setChartData(reference: ReferenceTypeAPI, values: [ChartDataEntry]) {
+    func setChartData(reference: ReferenceAPIType, values: [ChartDataEntry]) {
         self.referenceLabel.text = reference.rawValue.localized
         chartView.setData(values: values)
     }

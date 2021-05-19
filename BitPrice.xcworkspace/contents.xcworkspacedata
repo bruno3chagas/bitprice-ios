@@ -5,7 +5,13 @@
       location = "group:API/API.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Extensions/Extensions.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BitPrice.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UI/UI.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

@@ -9,4 +9,4 @@
 import API
 import Foundation
 
-typealias ReferenceTypeAPI = ReferenceType
+typealias ReferenceAPIType = ReferenceType

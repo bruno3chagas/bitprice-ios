@@ -6,6 +6,7 @@
 //  Copyright © 2018 Bruno Tortato Furtado. All rights reserved.
 //
 
+import UI
 import UIKit
 
 class FooterView: UIView {
@@ -26,15 +27,15 @@ class FooterView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         unselectAll()
-        weekButton.setTitle(ReferenceTypeAPI.week.rawValue.localized, for: .normal)
-        monthButton.setTitle(ReferenceTypeAPI.month.rawValue.localized, for: .normal)
-        yearButton.setTitle(ReferenceTypeAPI.year.rawValue.localized, for: .normal)
-        allButton.setTitle(ReferenceTypeAPI.all.rawValue.localized, for: .normal)
+        weekButton.setTitle(ReferenceAPIType.week.rawValue.localized, for: .normal)
+        monthButton.setTitle(ReferenceAPIType.month.rawValue.localized, for: .normal)
+        yearButton.setTitle(ReferenceAPIType.year.rawValue.localized, for: .normal)
+        allButton.setTitle(ReferenceAPIType.all.rawValue.localized, for: .normal)
     }
 
     // MARK: - Public
 
-    func setReference(_ type: ReferenceTypeAPI) {
+    func setReference(_ type: ReferenceAPIType) {
         unselectAll()
         let button: Button
 
@@ -53,7 +54,7 @@ class FooterView: UIView {
     @IBAction func buttonSelect(_ sender: Button) {
         unselectAll()
         sender.isSelected = true
-        let type: ReferenceTypeAPI
+        let type: ReferenceAPIType
 
         if sender == weekButton {
             type = .week
@@ -80,5 +81,5 @@ class FooterView: UIView {
 }
 
 protocol FooterViewDelegate: class {
-    func footerViewButtonDidSelect(type: ReferenceTypeAPI)
+    func footerViewButtonDidSelect(type: ReferenceAPIType)
 }
