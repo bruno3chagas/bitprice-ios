@@ -9,22 +9,19 @@
 /* Begin PBXBuildFile section */
 		27F93373519ECC0BE0A2F24B /* Pods_BitPrice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B34BFFBF5AF27B7753AEF30 /* Pods_BitPrice.framework */; };
 		73E1BE82AA673BDB1624510F /* Pods_BitPriceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664C18CFF9DED32C6060BE52 /* Pods_BitPriceUITests.framework */; };
+		8C4F05C52649973C00AB1772 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05BF2649973C00AB1772 /* FooterView.swift */; };
+		8C4F05C62649973C00AB1772 /* BodyPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C12649973C00AB1772 /* BodyPriceView.swift */; };
+		8C4F05C72649973C00AB1772 /* BodyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C22649973C00AB1772 /* BodyHistoryView.swift */; };
+		8C4F05C82649973C00AB1772 /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C32649973C00AB1772 /* BodyView.swift */; };
+		8C4F05C92649973C00AB1772 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C42649973C00AB1772 /* HeaderView.swift */; };
+		8CA97FAB264C229800ECAAD8 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA97FAA264C229800ECAAD8 /* UI.framework */; };
+		8CA97FAC264C229800ECAAD8 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA97FAA264C229800ECAAD8 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90D71FFA61EE60BD4F6F6A84 /* Pods_SnapshotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CC8C1CC9AE67D258C013D8 /* Pods_SnapshotUITests.framework */; };
 		B5CF2D788D7C5B77E19FD99A /* Pods_BitPriceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07813F8BD707C695FDBBC646 /* Pods_BitPriceTests.framework */; };
-		F8282342201D3B1C0008D8AF /* Date+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8282341201D3B1C0008D8AF /* Date+Diff.swift */; };
 		F83587752027AD4D00D3D375 /* SnapshotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83587742027AD4D00D3D375 /* SnapshotUITests.swift */; };
 		F835877D2027AD7600D3D375 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F835877C2027AD7600D3D375 /* SnapshotHelper.swift */; };
-		F8566EF9201B2EAC005E9950 /* UIColor+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8566EF8201B2EAC005E9950 /* UIColor+App.swift */; };
-		F8566EFB201B2F3A005E9950 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8566EFA201B2F3A005E9950 /* CardView.swift */; };
-		F8566F09201B85F4005E9950 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8566F08201B85F4005E9950 /* String+Localized.swift */; };
 		F8566F11201BBD0E005E9950 /* ReferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8566F10201BBD0E005E9950 /* ReferenceType.swift */; };
-		F8566F13201BC0CB005E9950 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8566F12201BC0CB005E9950 /* Date+Formatter.swift */; };
-		F8566F17201BC3F6005E9950 /* Float+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8566F16201BC3F6005E9950 /* Float+Formatter.swift */; };
-		F8566F20201BF115005E9950 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8566F1F201BF115005E9950 /* ChartView.swift */; };
-		F8566F25201C0E2E005E9950 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8566F24201C0E2E005E9950 /* Button.swift */; };
-		F8566F27201C0E54005E9950 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8566F26201C0E54005E9950 /* UIView+Shadow.swift */; };
 		F8566F2B201C1699005E9950 /* UserDefaults+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8566F2A201C1699005E9950 /* UserDefaults+App.swift */; };
-		F856EB85201D4AD700D4E655 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F856EB84201D4AD700D4E655 /* SpinnerView.swift */; };
 		F8635767201AA57B00FB886B /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8635766201AA57B00FB886B /* AppDelegate+Setup.swift */; };
 		F8635769201AA7CF00FB886B /* RemoteConfig+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8635768201AA7CF00FB886B /* RemoteConfig+Fetch.swift */; };
 		F8635771201AAC8800FB886B /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = F863576E201AAC8800FB886B /* RemoteConfigDefaults.plist */; };
@@ -38,18 +35,12 @@
 		F877E0B42024AD05002E955B /* TickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F877E0B32024AD05002E955B /* TickerService.swift */; };
 		F877E0B62024AD1B002E955B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F877E0B52024AD1B002E955B /* Service.swift */; };
 		F87C6AF2201AC4F100BB968F /* Fonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F87C6AF1201AC4F100BB968F /* Fonts.bundle */; };
-		F87C6AF4201AC55A00BB968F /* UIFont+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C6AF3201AC55A00BB968F /* UIFont+App.swift */; };
 		F88F2D3C2025DCA90010A5BD /* ApiServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F2D372025DCA90010A5BD /* ApiServiceTest.swift */; };
 		F88F2D3D2025DCA90010A5BD /* MarketPriceApiServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F2D382025DCA90010A5BD /* MarketPriceApiServiceTest.swift */; };
 		F88F2D3E2025DCA90010A5BD /* TickerApiServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F2D392025DCA90010A5BD /* TickerApiServiceTest.swift */; };
 		F88F2D3F2025DCA90010A5BD /* RequestDbServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F2D3B2025DCA90010A5BD /* RequestDbServiceTest.swift */; };
 		F88F2D412025DED50010A5BD /* MarketPriceServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F2D402025DED50010A5BD /* MarketPriceServiceTest.swift */; };
 		F88F2D432025E0250010A5BD /* TickerServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F2D422025E0250010A5BD /* TickerServiceTest.swift */; };
-		F8A704B2201C97E60015C071 /* BodyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704AA201C97E60015C071 /* BodyHistoryView.swift */; };
-		F8A704B3201C97E60015C071 /* BodyPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704AB201C97E60015C071 /* BodyPriceView.swift */; };
-		F8A704B4201C97E60015C071 /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704AC201C97E60015C071 /* BodyView.swift */; };
-		F8A704B5201C97E60015C071 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704AD201C97E60015C071 /* FooterView.swift */; };
-		F8A704B6201C97E60015C071 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704AE201C97E60015C071 /* HeaderView.swift */; };
 		F8A704B7201C97E60015C071 /* ViewController+FooterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704AF201C97E60015C071 /* ViewController+FooterDelegate.swift */; };
 		F8A704B8201C97E60015C071 /* ViewController+HeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704B0201C97E60015C071 /* ViewController+HeaderDelegate.swift */; };
 		F8A704B9201C97E60015C071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704B1201C97E60015C071 /* ViewController.swift */; };
@@ -61,12 +52,7 @@
 		F8A704C6201CB2880015C071 /* MarketPriceApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704C5201CB2880015C071 /* MarketPriceApiRouter.swift */; };
 		F8A704C8201CB40C0015C071 /* MarketPriceApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704C7201CB40C0015C071 /* MarketPriceApiService.swift */; };
 		F8A704CA201CB48A0015C071 /* MarketPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704C9201CB48A0015C071 /* MarketPrice.swift */; };
-		F8A704CC201CC3410015C071 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704CB201CC3410015C071 /* Date+Components.swift */; };
-		F8A8601E2024EB8800553A43 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A8601D2024EB8800553A43 /* UIView+Animations.swift */; };
-		F8AF645E202511530043465D /* BannerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AF645D202511530043465D /* BannerColors.swift */; };
-		F8AF64602025122F0043465D /* StatusBarNotificationBanner+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AF645F2025122F0043465D /* StatusBarNotificationBanner+App.swift */; };
 		F8C05D3D201CE51B0081AB33 /* RequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C05D3B201CE51B0081AB33 /* RequestEntity.swift */; };
-		F8D62DAD201D85C8005E76FD /* Date+Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D62DAC201D85C8005E76FD /* Date+Calc.swift */; };
 		F8D9D9B7201A925A002F2DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D9D9B6201A925A002F2DCC /* Assets.xcassets */; };
 		F8D9D9D0201A925A002F2DCC /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9D9CF201A925A002F2DCC /* ViewControllerUITests.swift */; };
 		F8DA792C2024963700AB528D /* MarketPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA792B2024963700AB528D /* MarketPriceService.swift */; };
@@ -99,6 +85,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8CA97FAD264C229800ECAAD8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8CA97FAC264C229800ECAAD8 /* UI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		07813F8BD707C695FDBBC646 /* Pods_BitPriceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitPriceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35173FF0A58A0E9CA0B0A38D /* Pods-BitPriceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPriceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitPriceTests/Pods-BitPriceTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,28 +108,26 @@
 		4E8F4DCE485A9275AE731303 /* Pods-BitPriceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPriceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitPriceTests/Pods-BitPriceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		54CC8C1CC9AE67D258C013D8 /* Pods_SnapshotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapshotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664C18CFF9DED32C6060BE52 /* Pods_BitPriceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitPriceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4F059E26498C7600AB1772 /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4F05BF2649973C00AB1772 /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		8C4F05C12649973C00AB1772 /* BodyPriceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyPriceView.swift; sourceTree = "<group>"; };
+		8C4F05C22649973C00AB1772 /* BodyHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyHistoryView.swift; sourceTree = "<group>"; };
+		8C4F05C32649973C00AB1772 /* BodyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyView.swift; sourceTree = "<group>"; };
+		8C4F05C42649973C00AB1772 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8C7C444D2649723000D05C50 /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CA97FAA264C229800ECAAD8 /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B34BFFBF5AF27B7753AEF30 /* Pods_BitPrice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitPrice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B861BE33033E914987B727AB /* Pods-SnapshotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotUITests/Pods-SnapshotUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E040B7A9DD2ED0787D6FD566 /* Pods-BitPrice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPrice.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitPrice/Pods-BitPrice.release.xcconfig"; sourceTree = "<group>"; };
 		F48425AB5EB5FC1569327FD0 /* Pods-SnapshotUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotUITests/Pods-SnapshotUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F8282341201D3B1C0008D8AF /* Date+Diff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Diff.swift"; sourceTree = "<group>"; };
 		F83587722027AD4D00D3D375 /* SnapshotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83587742027AD4D00D3D375 /* SnapshotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotUITests.swift; sourceTree = "<group>"; };
 		F83587762027AD4D00D3D375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F835877C2027AD7600D3D375 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
-		F8566EF8201B2EAC005E9950 /* UIColor+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
-		F8566EFA201B2F3A005E9950 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		F8566F08201B85F4005E9950 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		F8566F0A201B8631005E9950 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F8566F0B201B863D005E9950 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F8566F10201BBD0E005E9950 /* ReferenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceType.swift; sourceTree = "<group>"; };
-		F8566F12201BC0CB005E9950 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
-		F8566F16201BC3F6005E9950 /* Float+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Formatter.swift"; sourceTree = "<group>"; };
-		F8566F1F201BF115005E9950 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
-		F8566F24201C0E2E005E9950 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		F8566F26201C0E54005E9950 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		F8566F2A201C1699005E9950 /* UserDefaults+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+App.swift"; sourceTree = "<group>"; };
-		F856EB84201D4AD700D4E655 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		F8635766201AA57B00FB886B /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
 		F8635768201AA7CF00FB886B /* RemoteConfig+Fetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemoteConfig+Fetch.swift"; sourceTree = "<group>"; };
 		F863576C201AAC8800FB886B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -145,18 +143,12 @@
 		F877E0B32024AD05002E955B /* TickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerService.swift; sourceTree = "<group>"; };
 		F877E0B52024AD1B002E955B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		F87C6AF1201AC4F100BB968F /* Fonts.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Fonts.bundle; sourceTree = "<group>"; };
-		F87C6AF3201AC55A00BB968F /* UIFont+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+App.swift"; sourceTree = "<group>"; };
 		F88F2D372025DCA90010A5BD /* ApiServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiServiceTest.swift; sourceTree = "<group>"; };
 		F88F2D382025DCA90010A5BD /* MarketPriceApiServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketPriceApiServiceTest.swift; sourceTree = "<group>"; };
 		F88F2D392025DCA90010A5BD /* TickerApiServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickerApiServiceTest.swift; sourceTree = "<group>"; };
 		F88F2D3B2025DCA90010A5BD /* RequestDbServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestDbServiceTest.swift; sourceTree = "<group>"; };
 		F88F2D402025DED50010A5BD /* MarketPriceServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceServiceTest.swift; sourceTree = "<group>"; };
 		F88F2D422025E0250010A5BD /* TickerServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerServiceTest.swift; sourceTree = "<group>"; };
-		F8A704AA201C97E60015C071 /* BodyHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyHistoryView.swift; sourceTree = "<group>"; };
-		F8A704AB201C97E60015C071 /* BodyPriceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyPriceView.swift; sourceTree = "<group>"; };
-		F8A704AC201C97E60015C071 /* BodyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyView.swift; sourceTree = "<group>"; };
-		F8A704AD201C97E60015C071 /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
-		F8A704AE201C97E60015C071 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F8A704AF201C97E60015C071 /* ViewController+FooterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+FooterDelegate.swift"; sourceTree = "<group>"; };
 		F8A704B0201C97E60015C071 /* ViewController+HeaderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+HeaderDelegate.swift"; sourceTree = "<group>"; };
 		F8A704B1201C97E60015C071 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -168,12 +160,7 @@
 		F8A704C5201CB2880015C071 /* MarketPriceApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceApiRouter.swift; sourceTree = "<group>"; };
 		F8A704C7201CB40C0015C071 /* MarketPriceApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceApiService.swift; sourceTree = "<group>"; };
 		F8A704C9201CB48A0015C071 /* MarketPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPrice.swift; sourceTree = "<group>"; };
-		F8A704CB201CC3410015C071 /* Date+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
-		F8A8601D2024EB8800553A43 /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
-		F8AF645D202511530043465D /* BannerColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerColors.swift; sourceTree = "<group>"; };
-		F8AF645F2025122F0043465D /* StatusBarNotificationBanner+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatusBarNotificationBanner+App.swift"; sourceTree = "<group>"; };
 		F8C05D3B201CE51B0081AB33 /* RequestEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEntity.swift; sourceTree = "<group>"; };
-		F8D62DAC201D85C8005E76FD /* Date+Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Calc.swift"; sourceTree = "<group>"; };
 		F8D9D9A9201A925A002F2DCC /* BitPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9D9B6201A925A002F2DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8D9D9C0201A925A002F2DCC /* BitPriceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitPriceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CA97FAB264C229800ECAAD8 /* UI.framework in Frameworks */,
 				27F93373519ECC0BE0A2F24B /* Pods_BitPrice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,12 +214,24 @@
 		5E414E20828CE915BF9738F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CA97FAA264C229800ECAAD8 /* UI.framework */,
+				8C4F059E26498C7600AB1772 /* UI.framework */,
+				8C7C444D2649723000D05C50 /* UI.framework */,
 				9B34BFFBF5AF27B7753AEF30 /* Pods_BitPrice.framework */,
 				07813F8BD707C695FDBBC646 /* Pods_BitPriceTests.framework */,
 				664C18CFF9DED32C6060BE52 /* Pods_BitPriceUITests.framework */,
 				54CC8C1CC9AE67D258C013D8 /* Pods_SnapshotUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C4F05C02649973C00AB1772 /* Body */ = {
+			isa = PBXGroup;
+			children = (
+				8C4F05C12649973C00AB1772 /* BodyPriceView.swift */,
+				8C4F05C22649973C00AB1772 /* BodyHistoryView.swift */,
+			);
+			path = Body;
 			sourceTree = "<group>";
 		};
 		969AFF5F5D8D63027F946CA7 /* Pods */ = {
@@ -257,31 +257,6 @@
 				F83587762027AD4D00D3D375 /* Info.plist */,
 			);
 			path = SnapshotUITests;
-			sourceTree = "<group>";
-		};
-		F8566EF7201B2E83005E9950 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				F8566EFA201B2F3A005E9950 /* CardView.swift */,
-				F856EB84201D4AD700D4E655 /* SpinnerView.swift */,
-			);
-			path = UIView;
-			sourceTree = "<group>";
-		};
-		F8566F1E201BF115005E9950 /* LineChartView */ = {
-			isa = PBXGroup;
-			children = (
-				F8566F1F201BF115005E9950 /* ChartView.swift */,
-			);
-			path = LineChartView;
-			sourceTree = "<group>";
-		};
-		F8566F23201C0E1D005E9950 /* UIButton */ = {
-			isa = PBXGroup;
-			children = (
-				F8566F24201C0E2E005E9950 /* Button.swift */,
-			);
-			path = UIButton;
 			sourceTree = "<group>";
 		};
 		F863576A201AAC8800FB886B /* Firebase */ = {
@@ -311,7 +286,6 @@
 				F864D647201A947000EF7028 /* Helper */,
 				F864D648201A947000EF7028 /* Model */,
 				F864D649201A947000EF7028 /* Service */,
-				F864D64A201A947000EF7028 /* UI */,
 				F864D64B201A947000EF7028 /* View */,
 			);
 			path = Classes;
@@ -330,19 +304,8 @@
 			children = (
 				F8A704C3201CB1700015C071 /* Bundle+InfoPlist.swift */,
 				F864D66D201A975A00EF7028 /* CoreDataStack.swift */,
-				F8D62DAC201D85C8005E76FD /* Date+Calc.swift */,
-				F8A704CB201CC3410015C071 /* Date+Components.swift */,
-				F8282341201D3B1C0008D8AF /* Date+Diff.swift */,
-				F8566F12201BC0CB005E9950 /* Date+Formatter.swift */,
-				F8566F16201BC3F6005E9950 /* Float+Formatter.swift */,
 				F8EB80B1201CE91000AD9087 /* NSObject+ClassName.swift */,
 				F8635768201AA7CF00FB886B /* RemoteConfig+Fetch.swift */,
-				F8AF645F2025122F0043465D /* StatusBarNotificationBanner+App.swift */,
-				F8566F08201B85F4005E9950 /* String+Localized.swift */,
-				F8566EF8201B2EAC005E9950 /* UIColor+App.swift */,
-				F87C6AF3201AC55A00BB968F /* UIFont+App.swift */,
-				F8A8601D2024EB8800553A43 /* UIView+Animations.swift */,
-				F8566F26201C0E54005E9950 /* UIView+Shadow.swift */,
 				F8566F2A201C1699005E9950 /* UserDefaults+App.swift */,
 			);
 			path = Helper;
@@ -369,17 +332,6 @@
 				F8EB80AC201CE7B000AD9087 /* Database */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		F864D64A201A947000EF7028 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				F8AF645C202511340043465D /* BaseNotificationBanner */,
-				F8566F1E201BF115005E9950 /* LineChartView */,
-				F8566F23201C0E1D005E9950 /* UIButton */,
-				F8566EF7201B2E83005E9950 /* UIView */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		F864D64B201A947000EF7028 /* View */ = {
@@ -443,25 +395,16 @@
 		F8A704A8201C97E60015C071 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8C4F05C02649973C00AB1772 /* Body */,
+				8C4F05C32649973C00AB1772 /* BodyView.swift */,
+				8C4F05BF2649973C00AB1772 /* FooterView.swift */,
+				8C4F05C42649973C00AB1772 /* HeaderView.swift */,
 				F8A704B1201C97E60015C071 /* ViewController.swift */,
 				F8A704B0201C97E60015C071 /* ViewController+HeaderDelegate.swift */,
 				F8A704AF201C97E60015C071 /* ViewController+FooterDelegate.swift */,
 				F8DA792D20249B8200AB528D /* ViewController+ServiceDelegate.swift */,
-				F8A704AE201C97E60015C071 /* HeaderView.swift */,
-				F8A704AC201C97E60015C071 /* BodyView.swift */,
-				F8A704AD201C97E60015C071 /* FooterView.swift */,
-				F8A704A9201C97E60015C071 /* Body */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		F8A704A9201C97E60015C071 /* Body */ = {
-			isa = PBXGroup;
-			children = (
-				F8A704AB201C97E60015C071 /* BodyPriceView.swift */,
-				F8A704AA201C97E60015C071 /* BodyHistoryView.swift */,
-			);
-			path = Body;
 			sourceTree = "<group>";
 		};
 		F8A704BA201C9FCD0015C071 /* API */ = {
@@ -474,14 +417,6 @@
 				F8A704BD201CA8870015C071 /* TickerApiService.swift */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		F8AF645C202511340043465D /* BaseNotificationBanner */ = {
-			isa = PBXGroup;
-			children = (
-				F8AF645D202511530043465D /* BannerColors.swift */,
-			);
-			path = BaseNotificationBanner;
 			sourceTree = "<group>";
 		};
 		F8D9D9A0201A925A002F2DCC = {
@@ -556,8 +491,6 @@
 				F835876E2027AD4D00D3D375 /* Sources */,
 				F835876F2027AD4D00D3D375 /* Frameworks */,
 				F83587702027AD4D00D3D375 /* Resources */,
-				8052FF92BAA6ACAB65A050CC /* [CP] Embed Pods Frameworks */,
-				55C2084F992FEA70E6ECACE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -579,9 +512,9 @@
 				F8635765201AA50B00FB886B /* Setup Firebase Environment GoogleService-Info.plist */,
 				F8D9D9A7201A925A002F2DCC /* Resources */,
 				788B8434B80F97993872248B /* [CP] Embed Pods Frameworks */,
-				284B06907BEF15D8EB92EB93 /* [CP] Copy Pods Resources */,
 				F8635772201AAE1000FB886B /* Run Crashlytics Script */,
 				F881EA12202630B300F5E096 /* Run SwiftLint Script */,
+				8CA97FAD264C229800ECAAD8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -600,8 +533,6 @@
 				F8D9D9BC201A925A002F2DCC /* Sources */,
 				F8D9D9BD201A925A002F2DCC /* Frameworks */,
 				F8D9D9BE201A925A002F2DCC /* Resources */,
-				396AA2BEC572CCA1F667A733 /* [CP] Embed Pods Frameworks */,
-				1233F49828CBDD3043FAC30C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -621,8 +552,6 @@
 				F8D9D9C7201A925A002F2DCC /* Sources */,
 				F8D9D9C8201A925A002F2DCC /* Frameworks */,
 				F8D9D9C9201A925A002F2DCC /* Resources */,
-				D3FF8F51C6B78A1CE8E4897D /* [CP] Embed Pods Frameworks */,
-				1ADA2AE97F7AC7CCDF72FD8A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -726,51 +655,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1233F49828CBDD3043FAC30C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitPriceTests/Pods-BitPriceTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1ADA2AE97F7AC7CCDF72FD8A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitPriceUITests/Pods-BitPriceUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		284B06907BEF15D8EB92EB93 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitPrice/Pods-BitPrice-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		339698A0C4B7F8D4DA9A68A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -789,43 +673,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		396AA2BEC572CCA1F667A733 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitPriceTests/Pods-BitPriceTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55C2084F992FEA70E6ECACE8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapshotUITests/Pods-SnapshotUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		788B8434B80F97993872248B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BitPrice/Pods-BitPrice-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BitPrice/Pods-BitPrice-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
@@ -850,22 +704,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitPrice/Pods-BitPrice-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8052FF92BAA6ACAB65A050CC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapshotUITests/Pods-SnapshotUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitPrice/Pods-BitPrice-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		99ABC956E2F02CE6DF8C726F /* [CP] Check Pods Manifest.lock */ = {
@@ -920,21 +759,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D3FF8F51C6B78A1CE8E4897D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitPriceUITests/Pods-BitPriceUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F8635765201AA50B00FB886B /* Setup Firebase Environment GoogleService-Info.plist */ = {
@@ -996,49 +820,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8635769201AA7CF00FB886B /* RemoteConfig+Fetch.swift in Sources */,
-				F8566EFB201B2F3A005E9950 /* CardView.swift in Sources */,
 				F8C05D3D201CE51B0081AB33 /* RequestEntity.swift in Sources */,
 				F8DA792C2024963700AB528D /* MarketPriceService.swift in Sources */,
 				F8635767201AA57B00FB886B /* AppDelegate+Setup.swift in Sources */,
 				F8A704CA201CB48A0015C071 /* MarketPrice.swift in Sources */,
 				F8566F11201BBD0E005E9950 /* ReferenceType.swift in Sources */,
-				F856EB85201D4AD700D4E655 /* SpinnerView.swift in Sources */,
-				F8A704B3201C97E60015C071 /* BodyPriceView.swift in Sources */,
-				F8A8601E2024EB8800553A43 /* UIView+Animations.swift in Sources */,
 				F8A704C0201CA8C60015C071 /* ApiService.swift in Sources */,
 				F8A704C8201CB40C0015C071 /* MarketPriceApiService.swift in Sources */,
-				F8AF64602025122F0043465D /* StatusBarNotificationBanner+App.swift in Sources */,
-				F8566F17201BC3F6005E9950 /* Float+Formatter.swift in Sources */,
 				F877E0B62024AD1B002E955B /* Service.swift in Sources */,
 				F8A704B9201C97E60015C071 /* ViewController.swift in Sources */,
 				F8A704BC201CA6880015C071 /* Ticker.swift in Sources */,
+				8C4F05C72649973C00AB1772 /* BodyHistoryView.swift in Sources */,
+				8C4F05C52649973C00AB1772 /* FooterView.swift in Sources */,
 				F8A704C6201CB2880015C071 /* MarketPriceApiRouter.swift in Sources */,
-				F8D62DAD201D85C8005E76FD /* Date+Calc.swift in Sources */,
 				F8EB80AE201CE84300AD9087 /* RequestDbService.swift in Sources */,
 				F877E0B42024AD05002E955B /* TickerService.swift in Sources */,
-				F8AF645E202511530043465D /* BannerColors.swift in Sources */,
 				F8A704C2201CA9D00015C071 /* TickerApiRouter.swift in Sources */,
 				F8A704B7201C97E60015C071 /* ViewController+FooterDelegate.swift in Sources */,
-				F8566F25201C0E2E005E9950 /* Button.swift in Sources */,
-				F8566F20201BF115005E9950 /* ChartView.swift in Sources */,
 				F8DA792E20249B8200AB528D /* ViewController+ServiceDelegate.swift in Sources */,
-				F8A704B2201C97E60015C071 /* BodyHistoryView.swift in Sources */,
 				F864D654201A947000EF7028 /* AppDelegate.swift in Sources */,
-				F8282342201D3B1C0008D8AF /* Date+Diff.swift in Sources */,
 				F8566F2B201C1699005E9950 /* UserDefaults+App.swift in Sources */,
 				F8A704B8201C97E60015C071 /* ViewController+HeaderDelegate.swift in Sources */,
-				F8A704CC201CC3410015C071 /* Date+Components.swift in Sources */,
+				8C4F05C82649973C00AB1772 /* BodyView.swift in Sources */,
 				F864D65D201A947600EF7028 /* BitPrice.xcdatamodeld in Sources */,
+				8C4F05C62649973C00AB1772 /* BodyPriceView.swift in Sources */,
+				8C4F05C92649973C00AB1772 /* HeaderView.swift in Sources */,
 				F8A704BE201CA8870015C071 /* TickerApiService.swift in Sources */,
 				F8EB80B2201CE91000AD9087 /* NSObject+ClassName.swift in Sources */,
-				F8A704B4201C97E60015C071 /* BodyView.swift in Sources */,
-				F8A704B6201C97E60015C071 /* HeaderView.swift in Sources */,
-				F8A704B5201C97E60015C071 /* FooterView.swift in Sources */,
-				F8566F27201C0E54005E9950 /* UIView+Shadow.swift in Sources */,
-				F8566EF9201B2EAC005E9950 /* UIColor+App.swift in Sources */,
-				F87C6AF4201AC55A00BB968F /* UIFont+App.swift in Sources */,
-				F8566F09201B85F4005E9950 /* String+Localized.swift in Sources */,
-				F8566F13201BC0CB005E9950 /* Date+Formatter.swift in Sources */,
 				F864D66E201A975A00EF7028 /* CoreDataStack.swift in Sources */,
 				F8A704C4201CB1700015C071 /* Bundle+InfoPlist.swift in Sources */,
 			);
@@ -1272,6 +1080,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X89PU59Q9S;
 				INFOPLIST_FILE = BitPrice/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.furtado.BitPrice$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1288,6 +1097,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X89PU59Q9S;
 				INFOPLIST_FILE = BitPrice/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.furtado.BitPrice$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

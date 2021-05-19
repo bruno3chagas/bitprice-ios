@@ -6,7 +6,7 @@
 //  Copyright © 2018 Bruno Tortato Furtado. All rights reserved.
 //
 
-import Charts
+import UI
 import UIKit
 
 class BodyView: CardView {
