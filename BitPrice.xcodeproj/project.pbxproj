@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		27F93373519ECC0BE0A2F24B /* Pods_BitPrice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B34BFFBF5AF27B7753AEF30 /* Pods_BitPrice.framework */; };
+		38977D882655B8FD006EC291 /* ServiceFailureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F01C8264C474C000C2024 /* ServiceFailureType.swift */; };
+		38977D8C2655B900006EC291 /* ReferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F01C3264C450C000C2024 /* ReferenceType.swift */; };
+		38977D932655B958006EC291 /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C32649973C00AB1772 /* BodyView.swift */; };
+		38977D972655B95A006EC291 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05BF2649973C00AB1772 /* FooterView.swift */; };
+		38977D9B2655B95D006EC291 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C42649973C00AB1772 /* HeaderView.swift */; };
+		38977D9F2655B965006EC291 /* BodyPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C12649973C00AB1772 /* BodyPriceView.swift */; };
+		38977DA32655B967006EC291 /* BodyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C22649973C00AB1772 /* BodyHistoryView.swift */; };
+		389F014C264B1B3E000C2024 /* MarketPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F014B264B1B3E000C2024 /* MarketPriceService.swift */; };
+		389F0152264B1BA9000C2024 /* TickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389F0151264B1BA9000C2024 /* TickerService.swift */; };
+		389FFF2C2649AA2D000C2024 /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389FFF2B2649AA2D000C2024 /* API.framework */; };
+		389FFF2D2649AA2D000C2024 /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 389FFF2B2649AA2D000C2024 /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		73E1BE82AA673BDB1624510F /* Pods_BitPriceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664C18CFF9DED32C6060BE52 /* Pods_BitPriceUITests.framework */; };
-		8C4F05C52649973C00AB1772 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05BF2649973C00AB1772 /* FooterView.swift */; };
-		8C4F05C62649973C00AB1772 /* BodyPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C12649973C00AB1772 /* BodyPriceView.swift */; };
-		8C4F05C72649973C00AB1772 /* BodyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C22649973C00AB1772 /* BodyHistoryView.swift */; };
-		8C4F05C82649973C00AB1772 /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C32649973C00AB1772 /* BodyView.swift */; };
-		8C4F05C92649973C00AB1772 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F05C42649973C00AB1772 /* HeaderView.swift */; };
 		8CA97FAB264C229800ECAAD8 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA97FAA264C229800ECAAD8 /* UI.framework */; };
-		8CA97FAC264C229800ECAAD8 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA97FAA264C229800ECAAD8 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90D71FFA61EE60BD4F6F6A84 /* Pods_SnapshotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CC8C1CC9AE67D258C013D8 /* Pods_SnapshotUITests.framework */; };
 		B5CF2D788D7C5B77E19FD99A /* Pods_BitPriceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07813F8BD707C695FDBBC646 /* Pods_BitPriceTests.framework */; };
 		F83587752027AD4D00D3D375 /* SnapshotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83587742027AD4D00D3D375 /* SnapshotUITests.swift */; };
 		F835877D2027AD7600D3D375 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F835877C2027AD7600D3D375 /* SnapshotHelper.swift */; };
-		F8566F11201BBD0E005E9950 /* ReferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8566F10201BBD0E005E9950 /* ReferenceType.swift */; };
 		F8566F2B201C1699005E9950 /* UserDefaults+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8566F2A201C1699005E9950 /* UserDefaults+App.swift */; };
 		F8635767201AA57B00FB886B /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8635766201AA57B00FB886B /* AppDelegate+Setup.swift */; };
 		F8635769201AA7CF00FB886B /* RemoteConfig+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8635768201AA7CF00FB886B /* RemoteConfig+Fetch.swift */; };
@@ -31,9 +35,6 @@
 		F864D65D201A947600EF7028 /* BitPrice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F864D65B201A947600EF7028 /* BitPrice.xcdatamodeld */; };
 		F864D667201A95B300EF7028 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F864D669201A95B300EF7028 /* Localizable.strings */; };
 		F864D66C201A967600EF7028 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F864D66B201A967600EF7028 /* Settings.bundle */; };
-		F864D66E201A975A00EF7028 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F864D66D201A975A00EF7028 /* CoreDataStack.swift */; };
-		F877E0B42024AD05002E955B /* TickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F877E0B32024AD05002E955B /* TickerService.swift */; };
-		F877E0B62024AD1B002E955B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F877E0B52024AD1B002E955B /* Service.swift */; };
 		F87C6AF2201AC4F100BB968F /* Fonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F87C6AF1201AC4F100BB968F /* Fonts.bundle */; };
 		F88F2D3C2025DCA90010A5BD /* ApiServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F2D372025DCA90010A5BD /* ApiServiceTest.swift */; };
 		F88F2D3D2025DCA90010A5BD /* MarketPriceApiServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F2D382025DCA90010A5BD /* MarketPriceApiServiceTest.swift */; };
@@ -45,20 +46,10 @@
 		F8A704B8201C97E60015C071 /* ViewController+HeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704B0201C97E60015C071 /* ViewController+HeaderDelegate.swift */; };
 		F8A704B9201C97E60015C071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704B1201C97E60015C071 /* ViewController.swift */; };
 		F8A704BC201CA6880015C071 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704BB201CA6880015C071 /* Ticker.swift */; };
-		F8A704BE201CA8870015C071 /* TickerApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704BD201CA8870015C071 /* TickerApiService.swift */; };
-		F8A704C0201CA8C60015C071 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704BF201CA8C60015C071 /* ApiService.swift */; };
-		F8A704C2201CA9D00015C071 /* TickerApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704C1201CA9D00015C071 /* TickerApiRouter.swift */; };
-		F8A704C4201CB1700015C071 /* Bundle+InfoPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704C3201CB1700015C071 /* Bundle+InfoPlist.swift */; };
-		F8A704C6201CB2880015C071 /* MarketPriceApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704C5201CB2880015C071 /* MarketPriceApiRouter.swift */; };
-		F8A704C8201CB40C0015C071 /* MarketPriceApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704C7201CB40C0015C071 /* MarketPriceApiService.swift */; };
 		F8A704CA201CB48A0015C071 /* MarketPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A704C9201CB48A0015C071 /* MarketPrice.swift */; };
-		F8C05D3D201CE51B0081AB33 /* RequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C05D3B201CE51B0081AB33 /* RequestEntity.swift */; };
 		F8D9D9B7201A925A002F2DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D9D9B6201A925A002F2DCC /* Assets.xcassets */; };
 		F8D9D9D0201A925A002F2DCC /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D9D9CF201A925A002F2DCC /* ViewControllerUITests.swift */; };
-		F8DA792C2024963700AB528D /* MarketPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA792B2024963700AB528D /* MarketPriceService.swift */; };
 		F8DA792E20249B8200AB528D /* ViewController+ServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA792D20249B8200AB528D /* ViewController+ServiceDelegate.swift */; };
-		F8EB80AE201CE84300AD9087 /* RequestDbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB80AD201CE84300AD9087 /* RequestDbService.swift */; };
-		F8EB80B2201CE91000AD9087 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EB80B1201CE91000AD9087 /* NSObject+ClassName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,13 +77,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8CA97FAD264C229800ECAAD8 /* Embed Frameworks */ = {
+		389FFF2E2649AA2E000C2024 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8CA97FAC264C229800ECAAD8 /* UI.framework in Embed Frameworks */,
+				389FFF2D2649AA2D000C2024 /* API.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +93,11 @@
 /* Begin PBXFileReference section */
 		07813F8BD707C695FDBBC646 /* Pods_BitPriceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitPriceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35173FF0A58A0E9CA0B0A38D /* Pods-BitPriceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPriceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitPriceTests/Pods-BitPriceTests.release.xcconfig"; sourceTree = "<group>"; };
+		389F014B264B1B3E000C2024 /* MarketPriceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketPriceService.swift; sourceTree = "<group>"; };
+		389F0151264B1BA9000C2024 /* TickerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickerService.swift; sourceTree = "<group>"; };
+		389F01C3264C450C000C2024 /* ReferenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceType.swift; sourceTree = "<group>"; };
+		389F01C8264C474C000C2024 /* ServiceFailureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFailureType.swift; sourceTree = "<group>"; };
+		389FFF2B2649AA2D000C2024 /* API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D59A69A2A7322BD4500E335 /* Pods-BitPriceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPriceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitPriceUITests/Pods-BitPriceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		49D9770647862058B60F9440 /* Pods-BitPriceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPriceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitPriceUITests/Pods-BitPriceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4E5B60B4BB16C2200F2D05E9 /* Pods-BitPrice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPrice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitPrice/Pods-BitPrice.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,7 +122,6 @@
 		F835877C2027AD7600D3D375 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		F8566F0A201B8631005E9950 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F8566F0B201B863D005E9950 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		F8566F10201BBD0E005E9950 /* ReferenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceType.swift; sourceTree = "<group>"; };
 		F8566F2A201C1699005E9950 /* UserDefaults+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+App.swift"; sourceTree = "<group>"; };
 		F8635766201AA57B00FB886B /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
 		F8635768201AA7CF00FB886B /* RemoteConfig+Fetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RemoteConfig+Fetch.swift"; sourceTree = "<group>"; };
@@ -139,9 +134,6 @@
 		F864D65C201A947600EF7028 /* BitPrice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BitPrice.xcdatamodel; sourceTree = "<group>"; };
 		F864D65F201A947B00EF7028 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F864D66B201A967600EF7028 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		F864D66D201A975A00EF7028 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		F877E0B32024AD05002E955B /* TickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerService.swift; sourceTree = "<group>"; };
-		F877E0B52024AD1B002E955B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		F87C6AF1201AC4F100BB968F /* Fonts.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Fonts.bundle; sourceTree = "<group>"; };
 		F88F2D372025DCA90010A5BD /* ApiServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiServiceTest.swift; sourceTree = "<group>"; };
 		F88F2D382025DCA90010A5BD /* MarketPriceApiServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketPriceApiServiceTest.swift; sourceTree = "<group>"; };
@@ -153,14 +145,7 @@
 		F8A704B0201C97E60015C071 /* ViewController+HeaderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+HeaderDelegate.swift"; sourceTree = "<group>"; };
 		F8A704B1201C97E60015C071 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8A704BB201CA6880015C071 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
-		F8A704BD201CA8870015C071 /* TickerApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerApiService.swift; sourceTree = "<group>"; };
-		F8A704BF201CA8C60015C071 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
-		F8A704C1201CA9D00015C071 /* TickerApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerApiRouter.swift; sourceTree = "<group>"; };
-		F8A704C3201CB1700015C071 /* Bundle+InfoPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+InfoPlist.swift"; sourceTree = "<group>"; };
-		F8A704C5201CB2880015C071 /* MarketPriceApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceApiRouter.swift; sourceTree = "<group>"; };
-		F8A704C7201CB40C0015C071 /* MarketPriceApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceApiService.swift; sourceTree = "<group>"; };
 		F8A704C9201CB48A0015C071 /* MarketPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPrice.swift; sourceTree = "<group>"; };
-		F8C05D3B201CE51B0081AB33 /* RequestEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEntity.swift; sourceTree = "<group>"; };
 		F8D9D9A9201A925A002F2DCC /* BitPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9D9B6201A925A002F2DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8D9D9C0201A925A002F2DCC /* BitPriceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitPriceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,10 +153,7 @@
 		F8D9D9CB201A925A002F2DCC /* BitPriceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitPriceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D9D9CF201A925A002F2DCC /* ViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
 		F8D9D9D1201A925A002F2DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8DA792B2024963700AB528D /* MarketPriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceService.swift; sourceTree = "<group>"; };
 		F8DA792D20249B8200AB528D /* ViewController+ServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ServiceDelegate.swift"; sourceTree = "<group>"; };
-		F8EB80AD201CE84300AD9087 /* RequestDbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDbService.swift; sourceTree = "<group>"; };
-		F8EB80B1201CE91000AD9087 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +171,7 @@
 			files = (
 				8CA97FAB264C229800ECAAD8 /* UI.framework in Frameworks */,
 				27F93373519ECC0BE0A2F24B /* Pods_BitPrice.framework in Frameworks */,
+				389FFF2C2649AA2D000C2024 /* API.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,9 +194,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		389F014A264B1B2D000C2024 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				389F0151264B1BA9000C2024 /* TickerService.swift */,
+				389F014B264B1B3E000C2024 /* MarketPriceService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		5E414E20828CE915BF9738F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				389FFF2B2649AA2D000C2024 /* API.framework */,
 				8CA97FAA264C229800ECAAD8 /* UI.framework */,
 				8C4F059E26498C7600AB1772 /* UI.framework */,
 				8C7C444D2649723000D05C50 /* UI.framework */,
@@ -280,12 +273,12 @@
 		F864D643201A947000EF7028 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				389F014A264B1B2D000C2024 /* API */,
 				F864D644201A947000EF7028 /* AppDelegate.swift */,
 				F8635766201AA57B00FB886B /* AppDelegate+Setup.swift */,
 				F864D645201A947000EF7028 /* Controller */,
 				F864D647201A947000EF7028 /* Helper */,
 				F864D648201A947000EF7028 /* Model */,
-				F864D649201A947000EF7028 /* Service */,
 				F864D64B201A947000EF7028 /* View */,
 			);
 			path = Classes;
@@ -302,9 +295,6 @@
 		F864D647201A947000EF7028 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				F8A704C3201CB1700015C071 /* Bundle+InfoPlist.swift */,
-				F864D66D201A975A00EF7028 /* CoreDataStack.swift */,
-				F8EB80B1201CE91000AD9087 /* NSObject+ClassName.swift */,
 				F8635768201AA7CF00FB886B /* RemoteConfig+Fetch.swift */,
 				F8566F2A201C1699005E9950 /* UserDefaults+App.swift */,
 			);
@@ -314,24 +304,12 @@
 		F864D648201A947000EF7028 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F8C05D3B201CE51B0081AB33 /* RequestEntity.swift */,
-				F8566F10201BBD0E005E9950 /* ReferenceType.swift */,
 				F8A704C9201CB48A0015C071 /* MarketPrice.swift */,
 				F8A704BB201CA6880015C071 /* Ticker.swift */,
+				389F01C3264C450C000C2024 /* ReferenceType.swift */,
+				389F01C8264C474C000C2024 /* ServiceFailureType.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		F864D649201A947000EF7028 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				F877E0B52024AD1B002E955B /* Service.swift */,
-				F8DA792B2024963700AB528D /* MarketPriceService.swift */,
-				F877E0B32024AD05002E955B /* TickerService.swift */,
-				F8A704BA201C9FCD0015C071 /* API */,
-				F8EB80AC201CE7B000AD9087 /* Database */,
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		F864D64B201A947000EF7028 /* View */ = {
@@ -407,18 +385,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F8A704BA201C9FCD0015C071 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				F8A704BF201CA8C60015C071 /* ApiService.swift */,
-				F8A704C5201CB2880015C071 /* MarketPriceApiRouter.swift */,
-				F8A704C7201CB40C0015C071 /* MarketPriceApiService.swift */,
-				F8A704C1201CA9D00015C071 /* TickerApiRouter.swift */,
-				F8A704BD201CA8870015C071 /* TickerApiService.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		F8D9D9A0201A925A002F2DCC = {
 			isa = PBXGroup;
 			children = (
@@ -472,14 +438,6 @@
 			path = BitPriceUITests;
 			sourceTree = "<group>";
 		};
-		F8EB80AC201CE7B000AD9087 /* Database */ = {
-			isa = PBXGroup;
-			children = (
-				F8EB80AD201CE84300AD9087 /* RequestDbService.swift */,
-			);
-			path = Database;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -514,7 +472,7 @@
 				788B8434B80F97993872248B /* [CP] Embed Pods Frameworks */,
 				F8635772201AAE1000FB886B /* Run Crashlytics Script */,
 				F881EA12202630B300F5E096 /* Run SwiftLint Script */,
-				8CA97FAD264C229800ECAAD8 /* Embed Frameworks */,
+				389FFF2E2649AA2E000C2024 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -773,7 +731,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Name of the resource we're selectively copying\nGOOGLESERVICE_INFO_PLIST=GoogleService-Info.plist\n\n# Get references to debug and release versions of the GoogleService-Info.plist\n# NOTE: These should only live on the file system and should NOT be part of the target (since we'll be adding them to the target manually)\nGOOGLESERVICE_INFO_DEBUG=${PROJECT_DIR}/${TARGET_NAME}/Resources/Firebase/Debug/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO=${PROJECT_DIR}/${TARGET_NAME}/Resources/Firebase/${GOOGLESERVICE_INFO_PLIST}\n\n# Make sure the debug version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_DEBUG}\"\nif [ ! -f $GOOGLESERVICE_INFO_DEBUG ]\nthen\necho \"No Debug GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Make sure the release version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO}\"\nif [ ! -f $GOOGLESERVICE_INFO ]\nthen\necho \"No Release GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Get a reference to the destination location for the GoogleService-Info.plist\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Will copy ${GOOGLESERVICE_INFO_PLIST} to final destination: ${PLIST_DESTINATION}\"\n\n# Copy over the prod GoogleService-Info.plist for Release builds\nif [ \"${CONFIGURATION}\" == \"Release\" ]\nthen\necho \"Using ${GOOGLESERVICE_INFO}\"\ncp \"${GOOGLESERVICE_INFO}\" \"${PLIST_DESTINATION}\"\nelse\necho \"Using ${GOOGLESERVICE_INFO_DEBUG}\"\ncp \"${GOOGLESERVICE_INFO_DEBUG}\" \"${PLIST_DESTINATION}\"\nfi";
+			shellScript = "# Name of the resource we're selectively copying\nGOOGLESERVICE_INFO_PLIST=GoogleService-Info.plist\n\n# Get references to debug and release versions of the GoogleService-Info.plist\n# NOTE: These should only live on the file system and should NOT be part of the target (since we'll be adding them to the target manually)\nGOOGLESERVICE_INFO_DEBUG=${PROJECT_DIR}/${TARGET_NAME}/Resources/Firebase/Debug/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO=${PROJECT_DIR}/${TARGET_NAME}/Resources/Firebase/${GOOGLESERVICE_INFO_PLIST}\n\n# Make sure the debug version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_DEBUG}\"\nif [ ! -f $GOOGLESERVICE_INFO_DEBUG ]\nthen\necho \"No Debug GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Make sure the release version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO}\"\nif [ ! -f $GOOGLESERVICE_INFO ]\nthen\necho \"No Release GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Get a reference to the destination location for the GoogleService-Info.plist\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Will copy ${GOOGLESERVICE_INFO_PLIST} to final destination: ${PLIST_DESTINATION}\"\n\n# Copy over the prod GoogleService-Info.plist for Release builds\nif [ \"${CONFIGURATION}\" == \"Release\" ]\nthen\necho \"Using ${GOOGLESERVICE_INFO}\"\ncp \"${GOOGLESERVICE_INFO}\" \"${PLIST_DESTINATION}\"\nelse\necho \"Using ${GOOGLESERVICE_INFO_DEBUG}\"\ncp \"${GOOGLESERVICE_INFO_DEBUG}\" \"${PLIST_DESTINATION}\"\nfi\n";
 		};
 		F8635772201AAE1000FB886B /* Run Crashlytics Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -787,7 +745,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
 		};
 		F881EA12202630B300F5E096 /* Run SwiftLint Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -801,7 +759,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -820,35 +778,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8635769201AA7CF00FB886B /* RemoteConfig+Fetch.swift in Sources */,
-				F8C05D3D201CE51B0081AB33 /* RequestEntity.swift in Sources */,
-				F8DA792C2024963700AB528D /* MarketPriceService.swift in Sources */,
+				38977D9B2655B95D006EC291 /* HeaderView.swift in Sources */,
 				F8635767201AA57B00FB886B /* AppDelegate+Setup.swift in Sources */,
+				38977DA32655B967006EC291 /* BodyHistoryView.swift in Sources */,
+				38977D932655B958006EC291 /* BodyView.swift in Sources */,
 				F8A704CA201CB48A0015C071 /* MarketPrice.swift in Sources */,
-				F8566F11201BBD0E005E9950 /* ReferenceType.swift in Sources */,
-				F8A704C0201CA8C60015C071 /* ApiService.swift in Sources */,
-				F8A704C8201CB40C0015C071 /* MarketPriceApiService.swift in Sources */,
-				F877E0B62024AD1B002E955B /* Service.swift in Sources */,
+				38977D882655B8FD006EC291 /* ServiceFailureType.swift in Sources */,
+				38977D9F2655B965006EC291 /* BodyPriceView.swift in Sources */,
+				389F014C264B1B3E000C2024 /* MarketPriceService.swift in Sources */,
 				F8A704B9201C97E60015C071 /* ViewController.swift in Sources */,
 				F8A704BC201CA6880015C071 /* Ticker.swift in Sources */,
-				8C4F05C72649973C00AB1772 /* BodyHistoryView.swift in Sources */,
-				8C4F05C52649973C00AB1772 /* FooterView.swift in Sources */,
-				F8A704C6201CB2880015C071 /* MarketPriceApiRouter.swift in Sources */,
-				F8EB80AE201CE84300AD9087 /* RequestDbService.swift in Sources */,
-				F877E0B42024AD05002E955B /* TickerService.swift in Sources */,
-				F8A704C2201CA9D00015C071 /* TickerApiRouter.swift in Sources */,
+				389F0152264B1BA9000C2024 /* TickerService.swift in Sources */,
 				F8A704B7201C97E60015C071 /* ViewController+FooterDelegate.swift in Sources */,
 				F8DA792E20249B8200AB528D /* ViewController+ServiceDelegate.swift in Sources */,
 				F864D654201A947000EF7028 /* AppDelegate.swift in Sources */,
 				F8566F2B201C1699005E9950 /* UserDefaults+App.swift in Sources */,
 				F8A704B8201C97E60015C071 /* ViewController+HeaderDelegate.swift in Sources */,
-				8C4F05C82649973C00AB1772 /* BodyView.swift in Sources */,
 				F864D65D201A947600EF7028 /* BitPrice.xcdatamodeld in Sources */,
-				8C4F05C62649973C00AB1772 /* BodyPriceView.swift in Sources */,
-				8C4F05C92649973C00AB1772 /* HeaderView.swift in Sources */,
-				F8A704BE201CA8870015C071 /* TickerApiService.swift in Sources */,
-				F8EB80B2201CE91000AD9087 /* NSObject+ClassName.swift in Sources */,
-				F864D66E201A975A00EF7028 /* CoreDataStack.swift in Sources */,
-				F8A704C4201CB1700015C071 /* Bundle+InfoPlist.swift in Sources */,
+				38977D8C2655B900006EC291 /* ReferenceType.swift in Sources */,
+				38977D972655B95A006EC291 /* FooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

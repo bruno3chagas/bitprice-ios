@@ -20,7 +20,7 @@ extension ViewController: TickerServiceDelegate {
         }
     }
 
-    func tickerGetDidComplete(failure: ServiceFailureType) {
+    func tickerGetDidComplete(failure: ServiceFailureTypeAPI) {
         bodyView.priceView.setPrice(0)
         bodyView.priceView.spinnerView.hide()
 
@@ -55,7 +55,7 @@ extension ViewController: MarketPriceServiceDelegate {
         bodyView.historyView.spinnerView.hide()
     }
 
-    func marketPriceGetDidComplete(failure: ServiceFailureType) {
+    func marketPriceGetDidComplete(failure: ServiceFailureTypeAPI) {
         bodyView.historyView.setLoaded(true)
         bodyView.historyView.spinnerView.hide()
     }

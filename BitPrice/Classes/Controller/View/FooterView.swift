@@ -27,15 +27,15 @@ class FooterView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         unselectAll()
-        weekButton.setTitle(ReferenceType.week.rawValue.localized, for: .normal)
-        monthButton.setTitle(ReferenceType.month.rawValue.localized, for: .normal)
-        yearButton.setTitle(ReferenceType.year.rawValue.localized, for: .normal)
-        allButton.setTitle(ReferenceType.all.rawValue.localized, for: .normal)
+        weekButton.setTitle(ReferenceAPIType.week.rawValue.localized, for: .normal)
+        monthButton.setTitle(ReferenceAPIType.month.rawValue.localized, for: .normal)
+        yearButton.setTitle(ReferenceAPIType.year.rawValue.localized, for: .normal)
+        allButton.setTitle(ReferenceAPIType.all.rawValue.localized, for: .normal)
     }
 
     // MARK: - Public
 
-    func setReference(_ type: ReferenceType) {
+    func setReference(_ type: ReferenceAPIType) {
         unselectAll()
         let button: Button
 
@@ -54,7 +54,7 @@ class FooterView: UIView {
     @IBAction func buttonSelect(_ sender: Button) {
         unselectAll()
         sender.isSelected = true
-        let type: ReferenceType
+        let type: ReferenceAPIType
 
         if sender == weekButton {
             type = .week
@@ -81,5 +81,5 @@ class FooterView: UIView {
 }
 
 protocol FooterViewDelegate: class {
-    func footerViewButtonDidSelect(type: ReferenceType)
+    func footerViewButtonDidSelect(type: ReferenceAPIType)
 }

@@ -10,11 +10,11 @@ import Foundation
 import CoreData
 
 @objc(RequestEntity)
-class RequestEntity: NSManagedObject {
+public class RequestEntity: NSManagedObject {
 
     @NSManaged var reference: String?
-    @NSManaged var data: Data
-    @NSManaged var date: Date
+    @NSManaged public var data: Data
+    @NSManaged public var date: Date
 
     // MARK: - Public
 

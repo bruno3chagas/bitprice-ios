@@ -1,5 +1,5 @@
 //
-//  ReferenceType.swift
+//  ServiceFailureType.swift
 //  BitPrice
 //
 //  Created by bruno.c.carvalho on 12/05/21.
@@ -9,4 +9,4 @@
 import API
 import Foundation
 
-typealias ReferenceAPIType = ReferenceType
+typealias ServiceFailureTypeAPI = ServiceFailureType

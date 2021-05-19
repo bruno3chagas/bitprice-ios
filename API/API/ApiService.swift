@@ -9,7 +9,7 @@
 import Alamofire
 import Foundation
 
-class ApiService {
+public class ApiService {
 
     // MARK: - Variable
 

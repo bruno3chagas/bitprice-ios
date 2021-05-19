@@ -7,16 +7,20 @@
 //
 
 import Alamofire
+import Extensions
 import Foundation
-import UI
 
-class MarketPriceApiService: ApiService {
+public class MarketPriceApiService: ApiService {
 
     // MARK: - Public
 
-    func get(reference: ReferenceType,
-             success: @escaping (Data) -> Void,
-             failure: @escaping (ServiceFailureType) -> Void) {
+    public override init() {
+        super.init()
+    }
+    
+    public func get(reference: ReferenceType,
+                    success: @escaping (Data) -> Void,
+                    failure: @escaping (ServiceFailureType) -> Void) {
 
         let params = parameters(reference: reference)
 
