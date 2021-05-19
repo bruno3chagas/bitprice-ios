@@ -7,17 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38977D0E2655AFE7006EC291 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38977D0D2655AFE7006EC291 /* Extensions.framework */; };
+		38977D0F2655AFE7006EC291 /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38977D0D2655AFE7006EC291 /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8C4F058E26498C3C00AB1772 /* UIFont+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F058326498C3B00AB1772 /* UIFont+App.swift */; };
 		8C4F058F26498C3C00AB1772 /* UIColor+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F058426498C3B00AB1772 /* UIColor+App.swift */; };
 		8C4F059026498C3C00AB1772 /* Float+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F058526498C3B00AB1772 /* Float+Formatter.swift */; };
 		8C4F059126498C3C00AB1772 /* StatusBarNotificationBanner+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F058626498C3B00AB1772 /* StatusBarNotificationBanner+App.swift */; };
-		8C4F059226498C3C00AB1772 /* Date+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F058726498C3B00AB1772 /* Date+Diff.swift */; };
-		8C4F059326498C3C00AB1772 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F058826498C3C00AB1772 /* Date+Components.swift */; };
 		8C4F059426498C3C00AB1772 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F058926498C3C00AB1772 /* UIView+Animations.swift */; };
-		8C4F059526498C3C00AB1772 /* Date+Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F058A26498C3C00AB1772 /* Date+Calc.swift */; };
 		8C4F059626498C3C00AB1772 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F058B26498C3C00AB1772 /* UIView+Shadow.swift */; };
 		8C4F059726498C3C00AB1772 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F058C26498C3C00AB1772 /* String+Localized.swift */; };
-		8C4F059826498C3C00AB1772 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F058D26498C3C00AB1772 /* Date+Formatter.swift */; };
 		8C7C44392649718400D05C50 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7C442F2649718300D05C50 /* UI.framework */; };
 		8C7C443E2649718400D05C50 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C443D2649718400D05C50 /* UITests.swift */; };
 		8C7C44402649718400D05C50 /* UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7C44322649718300D05C50 /* UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,18 +38,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		38977D102655AFE7006EC291 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				38977D0F2655AFE7006EC291 /* Extensions.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		38977D0D2655AFE7006EC291 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4F058326498C3B00AB1772 /* UIFont+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+App.swift"; sourceTree = "<group>"; };
 		8C4F058426498C3B00AB1772 /* UIColor+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
 		8C4F058526498C3B00AB1772 /* Float+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Formatter.swift"; sourceTree = "<group>"; };
 		8C4F058626498C3B00AB1772 /* StatusBarNotificationBanner+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StatusBarNotificationBanner+App.swift"; sourceTree = "<group>"; };
-		8C4F058726498C3B00AB1772 /* Date+Diff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Diff.swift"; sourceTree = "<group>"; };
-		8C4F058826498C3C00AB1772 /* Date+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
 		8C4F058926498C3C00AB1772 /* UIView+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
-		8C4F058A26498C3C00AB1772 /* Date+Calc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Calc.swift"; sourceTree = "<group>"; };
 		8C4F058B26498C3C00AB1772 /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		8C4F058C26498C3C00AB1772 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
-		8C4F058D26498C3C00AB1772 /* Date+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
 		8C7C442F2649718300D05C50 /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7C44322649718300D05C50 /* UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UI.h; sourceTree = "<group>"; };
 		8C7C44332649718300D05C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38977D0E2655AFE7006EC291 /* Extensions.framework in Frameworks */,
 				B2F1399F3EC39C7B2714CCF8 /* Pods_UI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,10 +102,6 @@
 		8C4F056526498BE500AB1772 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				8C4F058A26498C3C00AB1772 /* Date+Calc.swift */,
-				8C4F058826498C3C00AB1772 /* Date+Components.swift */,
-				8C4F058726498C3B00AB1772 /* Date+Diff.swift */,
-				8C4F058D26498C3C00AB1772 /* Date+Formatter.swift */,
 				8C4F058526498C3B00AB1772 /* Float+Formatter.swift */,
 				8C4F058626498C3B00AB1772 /* StatusBarNotificationBanner+App.swift */,
 				8C4F058C26498C3C00AB1772 /* String+Localized.swift */,
@@ -195,6 +201,7 @@
 		93FDB5E7AA6EF518E9B2FA56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				38977D0D2655AFE7006EC291 /* Extensions.framework */,
 				BAF43E6D87421824B84F16A2 /* Pods_UI.framework */,
 			);
 			name = Frameworks;
@@ -233,6 +240,7 @@
 				8C7C442B2649718300D05C50 /* Sources */,
 				8C7C442C2649718300D05C50 /* Frameworks */,
 				8C7C442D2649718300D05C50 /* Resources */,
+				38977D102655AFE7006EC291 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -349,8 +357,6 @@
 				8CC4D46B264979EE009DA3F2 /* Button.swift in Sources */,
 				8C4F059126498C3C00AB1772 /* StatusBarNotificationBanner+App.swift in Sources */,
 				8CC4D46A264979EE009DA3F2 /* SpinnerView.swift in Sources */,
-				8C4F059826498C3C00AB1772 /* Date+Formatter.swift in Sources */,
-				8C4F059526498C3C00AB1772 /* Date+Calc.swift in Sources */,
 				8CC4D467264979EE009DA3F2 /* ChartView.swift in Sources */,
 				8C4F059426498C3C00AB1772 /* UIView+Animations.swift in Sources */,
 				8CC4D469264979EE009DA3F2 /* CardView.swift in Sources */,
@@ -359,8 +365,6 @@
 				8C4F059026498C3C00AB1772 /* Float+Formatter.swift in Sources */,
 				8C4F058E26498C3C00AB1772 /* UIFont+App.swift in Sources */,
 				8CC4D468264979EE009DA3F2 /* BannerColors.swift in Sources */,
-				8C4F059226498C3C00AB1772 /* Date+Diff.swift in Sources */,
-				8C4F059326498C3C00AB1772 /* Date+Components.swift in Sources */,
 				8CA97F6E264C207300ECAAD8 /* ChartDataEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
